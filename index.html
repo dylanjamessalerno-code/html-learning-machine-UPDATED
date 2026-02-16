@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<style>
+body {
+  background-color: rgb(65, 98, 109); /* Using a color name */
+}
+
+div {
+  background-color: #c2f4e9; /* Using a hex code */
+  padding: 20px;
+}
+</style>
+
+
+<link rel="stylesheet" href="themes.css">
+
+<html>
+<head>
+    <title>OkayBot</title>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">OkayBot</h1>
+    <a href="flappy.html" style="font-family: 'Courier New', Courier, monospace;">Flappy Bird</a>
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">https://forms.gle/mhrtULrpThxfLaraA Submit funnies here</h2>
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <div id="chat-box" style="height: 300px; overflow-y: scroll; border: 1px solid #91b5e1; padding: 10px; margin-bottom: 10px;"></div>
+    <input type="text" id="user-input" placeholder="Type something...">
+    <button onclick="handleChat()">Send</button>
+
+    <script src="script.js"></script>
+    <script>
+        // Optional: Allow pressing "Enter" to send
+        document.getElementById("user-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                handleChat();
+            }
+        });
+    </script>
+</body>
+</html>
