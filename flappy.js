@@ -1,3 +1,13 @@
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        // Existing game start logic here...
+        
+        // Start the music
+        document.getElementById('bgMusic').play();
+    }
+});
+
+
 // Background scrolling speed
 let move_speed = 3;
   
